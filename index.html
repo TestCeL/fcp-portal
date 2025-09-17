@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principio de Ocultación Fundamental - Teoría Cuántica</title>
+    <meta name="description" content="El Principio de Ocultación Fundamental: Cómo los límites de información cuántica emergen de estructuras categóricas auto-ocultantes">
+    <meta name="keywords" content="física cuántica, teoría de la información, ocultación fundamental, mecánica cuántica">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>FCP Theory</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#resumen" class="nav-link">Resumen</a></li>
+                    <li><a href="#teoria" class="nav-link">Teoría</a></li>
+                    <li><a href="#experimentos" class="nav-link">Experimentos</a></li>
+                    <li><a href="#aplicaciones" class="nav-link">Aplicaciones</a></li>
+                    <li><a href="#referencias" class="nav-link">Referencias</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Hero -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">El Principio de Ocultación Fundamental</h1>
+                <h2 class="hero-subtitle">Cómo los límites de información cuántica emergen de estructuras categóricas auto-ocultantes</h2>
+                <p class="hero-description">
+                    Una nueva perspectiva unificadora sobre los fenómenos cuánticos fundamentales a través del lente de la ocultación de información.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#resumen" class="btn btn-primary">Explorar Teoría</a>
+                    <a href="#experimentos" class="btn btn-secondary">Ver Experimentos</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="quantum-animation">
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Resumen -->
+        <section id="resumen" class="section">
+            <div class="container">
+                <h2 class="section-title">Resumen Ejecutivo</h2>
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3>¿Qué es el FCP?</h3>
+                        <p>
+                            El <strong>Principio de Ocultación Fundamental (FCP)</strong> propone que el universo emerge de un conjunto mínimo de reglas fundamentales cuya naturaleza completa no puede ser observada desde dentro del sistema mismo.
+                        </p>
+                        <div class="formula-box">
+                            $$\Theta_{\mathcal{N}}(E) \equiv \chi(\mathcal{N}(E)) - I_{acc}(\mathcal{N}(E)) \geq 0$$
+                        </div>
+                        <p><em>Funcional de ocultación que cuantifica la brecha entre información accesible y información de Holevo</em></p>
+                    </div>
+
+                    <div class="content-card">
+                        <h3>Límites Cuánticos Unificados</h3>
+                        <p>Los límites observables en mecánica cuántica no son restricciones accidentales sino manifestaciones estructurales del FCP:</p>
+                        <ul>
+                            <li><strong>No-clonación:</strong> $F_{max} = 5/6$ para qubits</li>
+                            <li><strong>Relaciones de incertidumbre:</strong> $S(X|B) + S(Y|B) \geq \log_2(1/c) + S(A|B)$</li>
+                            <li><strong>Límite de Holevo:</strong> $I_{acc} \leq \chi \leq \log_2 d_B$</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-card">
+                        <h3>Conexiones Interdisciplinarias</h3>
+                        <p>El FCP establece conexiones profundas con:</p>
+                        <ul>
+                            <li><strong>Teoremas de incompletitud de Gödel</strong></li>
+                            <li><strong>Problema de parada de Turing</strong></li>
+                            <li><strong>Teoría de categorías</strong></li>
+                            <li><strong>Límites de computabilidad</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Teoría -->
+        <section id="teoria" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Marco Teórico</h2>
+
+                <div class="theory-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="formalizacion">Formalización Matemática</button>
+                        <button class="tab-btn" data-tab="categorias">Teoría de Categorías</button>
+                        <button class="tab-btn" data-tab="limites">Límites Cuánticos</button>
+                    </div>
+
+                    <div class="tab-content">
+                        <div id="formalizacion" class="tab-panel active">
+                            <h3>Formalización vía Teoría de Información Cuántica</h3>
+                            <p>Formalizamos el FCP a través de un funcional de ocultación operacional <strong>Θ</strong> que cuantifica la brecha entre información accesible y de Holevo.</p>
+
+                            <div class="theorem-box">
+                                <h4>Teorema 2.1 (Límite Fundamental de Ocultación)</h4>
+                                <p>Para cualquier canal cuántico $\mathcal{N}$ y conjunto ${p_i, \rho_i}$:</p>
+                                <div class="formula-display">
+                                    $$I_{acc}(\mathcal{N}(E)) \leq \chi(\mathcal{N}(E)) \leq S\left(\sum_i p_i \mathcal{N}(\rho_i)\right) \leq \log_2 d_B$$
+                                </div>
+                                <p><em>donde $d_B = \dim(H_B)$ es la dimensión del espacio de Hilbert de salida.</em></p>
+                            </div>
+                        </div>
+
+                        <div id="categorias" class="tab-panel">
+                            <h3>Marco de Teoría de Categorías</h3>
+                            <p>Modelamos la mecánica cuántica dentro del marco de categorías compactas cerradas con daga, donde la ocultación emerge a través de abstracción categórica.</p>
+
+                            <div class="definition-box">
+                                <h4>Definición 3.1 (Categoría Cuántica)</h4>
+                                <p>La categoría <strong>FHilb</strong> de espacios de Hilbert de dimensión finita forma una categoría compacta cerrada con daga con:</p>
+                                <ul>
+                                    <li>Objetos: Espacios de Hilbert de dimensión finita</li>
+                                    <li>Morfismos: Mapas lineales</li>
+                                    <li>Producto tensorial: ⊗</li>
+                                    <li>Estructura daga: †</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="limites" class="tab-panel">
+                            <h3>Límites Cuánticos como Características Estructurales</h3>
+                            <p>Los límites de información cuántica son manifestaciones interconectadas del Principio de Ocultación Fundamental.</p>
+
+                            <div class="limits-grid">
+                                <div class="limit-card">
+                                    <h4>No-clonación</h4>
+                                    <p>La linealidad de morfismos en FHilb previene la duplicación de coeficientes de superposición</p>
+                                    <div class="formula-mini">$F_{max} = 5/6$ (1→2 qubits)</div>
+                                </div>
+                                <div class="limit-card">
+                                    <h4>Límite de Holevo</h4>
+                                    <p>El functor Cuántico → Clásico necesariamente pierde información</p>
+                                    <div class="formula-mini">$I_{acc} \leq \chi \leq \log_2 d_B$</div>
+                                </div>
+                                <div class="limit-card">
+                                    <h4>Incertidumbre Entrópica</h4>
+                                    <p>Observables no-conmutativos corresponden a contextos de medición distintos</p>
+                                    <div class="formula-mini">$S(X|B) + S(Y|B) \geq \log_2(1/c)$</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Experimentos -->
+        <section id="experimentos" class="section">
+            <div class="container">
+                <h2 class="section-title">Propuestas Experimentales</h2>
+                <p class="section-intro">Ocho experimentos diseñados para probar diferentes aspectos del Principio de Ocultación Fundamental</p>
+
+                <div class="experiments-grid">
+                    <div class="experiment-card">
+                        <div class="experiment-number">1</div>
+                        <h3>Clonación Aproximada Óptima</h3>
+                        <p><strong>Objetivo:</strong> Probar el trade-off entre fidelidad de clonación y ocultación de información</p>
+                        <div class="experiment-details">
+                            <p><strong>Plataforma:</strong> Sistema fotónico usando emisión estimulada</p>
+                            <p><strong>Métrica clave:</strong> $F = 5/6$ para clonación universal 1→2 qubits</p>
+                            <p><strong>Criterio de falsificación:</strong> Fidelidad excediendo límites teóricos</p>
+                        </div>
+                    </div>
+
+                    <div class="experiment-card">
+                        <div class="experiment-number">2</div>
+                        <h3>Límite de Holevo en Codificación Densa</h3>
+                        <p><strong>Objetivo:</strong> Cuantificar la máxima información clásica extraíble de estados cuánticos</p>
+                        <div class="experiment-details">
+                            <p><strong>Plataforma:</strong> Fotones codificados en polarización</p>
+                            <p><strong>Métrica clave:</strong> Brecha de ocultación $\Delta = \chi - I_{acc}$</p>
+                            <p><strong>Límite teórico:</strong> Máximo 2 bits clásicos por qubit con entrelazamiento</p>
+                        </div>
+                    </div>
+
+                    <div class="experiment-card">
+                        <div class="experiment-number">3</div>
+                        <h3>Tomografía vs Perturbación</h3>
+                        <p><strong>Objetivo:</strong> Medir el trade-off fundamental entre ganancia de información y perturbación del estado</p>
+                        <div class="experiment-details">
+                            <p><strong>Plataforma:</strong> Centros NV en diamante</p>
+                            <p><strong>Métrica clave:</strong> Parámetro de trade-off $\tau$ empírico</p>
+                            <p><strong>Marco teórico:</strong> Lema de medición suave</p>
+                        </div>
+                    </div>
+
+                    <div class="experiment-card">
+                        <div class="experiment-number">4</div>
+                        <h3>Teorema de No-Broadcasting</h3>
+                        <p><strong>Objetivo:</strong> Verificar que el broadcasting perfecto es posible sí y solo sí los estados conmutan</p>
+                        <div class="experiment-details">
+                            <p><strong>Plataforma:</strong> Sistemas multi-qubit NMR</p>
+                            <p><strong>Métrica clave:</strong> Fidelidad de broadcasting vs norma del conmutador</p>
+                            <p><strong>Predicción:</strong> Broadcasting perfecto ⟺ $[ρ_i, ρ_j] = 0$</p>
+                        </div>
+                    </div>
+
+                    <div class="experiment-card">
+                        <div class="experiment-number">5</div>
+                        <h3>Restricciones de Monogamia del Entrelazamiento</h3>
+                        <p><strong>Objetivo:</strong> Verificar que el compartir entrelazamiento sigue restricciones basadas en ocultación</p>
+                        <div class="experiment-details">
+                            <p><strong>Plataforma:</strong> Estados entrelazados de tres fotones</p>
+                            <p><strong>Métrica clave:</strong> Desigualdad de monogamia $\tau_{A|B} + \tau_{A|C} \leq \tau_{A|BC}$</p>
+                            <p><strong>Marco teórico:</strong> Desigualdad de Coffman-Kundu-Wootters</p>
+                        </div>
+                    </div>
+
+                    <div class="experiment-card">
+                        <div class="experiment-number">6</div>
+                        <h3>Causalidad Informacional</h3>
+                        <p><strong>Objetivo:</strong> Probar el principio de causalidad informacional</p>
+                        <div class="experiment-details">
+                            <p><strong>Plataforma:</strong> Estados fotónicos de alta dimensión usando momento angular orbital</p>
+                            <p><strong>Métrica clave:</strong> $\sum_k I(A_k : \hat{B} | K=k) \leq m$</p>
+                            <p><strong>Aplicación:</strong> Códigos de acceso aleatorio cuántico</p>
+                        </div>
+                    </div>
+
+                    <div class="experiment-card">
+                        <div class="experiment-number">7</div>
+                        <h3>Incertidumbre Entrópica con Memoria</h3>
+                        <p><strong>Objetivo:</strong> Medir cómo la memoria cuántica reduce pero no elimina la incertidumbre de medición</p>
+                        <div class="experiment-details">
+                            <p><strong>Plataforma:</strong> Qubits fotónicos con memoria óptica cuántica</p>
+                            <p><strong>Límite teórico:</strong> $S(X|B) + S(Y|B) \geq \log_2(1/c) + S(A|B)$</p>
+                            <p><strong>Referencia:</strong> Berta et al., Nature Physics (2010)</p>
+                        </div>
+                    </div>
+
+                    <div class="experiment-card">
+                        <div class="experiment-number">8</div>
+                        <h3>Fenómenos de Data Locking</h3>
+                        <p><strong>Objetivo:</strong> Demostrar ocultación exponencial de información con claves pequeñas</p>
+                        <div class="experiment-details">
+                            <p><strong>Plataforma:</strong> Protocolo de máquina enigma cuántica multi-fotón</p>
+                            <p><strong>Métrica clave:</strong> Ratio de bloqueo $R = (I_{unlocked} - I_{locked})/(key length)$</p>
+                            <p><strong>Predicción:</strong> $R >> 1$ posible (brecha exponencial)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Aplicaciones -->
+        <section id="aplicaciones" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Aplicaciones y Conexiones</h2>
+
+                <div class="applications-grid">
+                    <div class="app-card">
+                        <div class="app-icon">🔮</div>
+                        <h3>Computación Cuántica</h3>
+                        <p>El FCP proporciona nuevas perspectivas sobre clases de complejidad cuántica y límites fundamentales de procesamiento de información.</p>
+                        <ul>
+                            <li>Corrección de errores cuánticos</li>
+                            <li>Límites de complejidad</li>
+                            <li>Protocolos criptográficos</li>
+                        </ul>
+                    </div>
+
+                    <div class="app-card">
+                        <div class="app-icon">📐</div>
+                        <h3>Fundamentos Matemáticos</h3>
+                        <p>Conexiones profundas con teoremas de incompletitud de Gödel y límites de computabilidad de Turing.</p>
+                        <ul>
+                            <li>Sistemas auto-referenciales</li>
+                            <li>Indecidibilidad física</li>
+                            <li>Límites epistemológicos</li>
+                        </ul>
+                    </div>
+
+                    <div class="app-card">
+                        <div class="app-icon">🌌</div>
+                        <h3>Cosmología y Gravedad</h3>
+                        <p>Extensiones futuras hacia teoría cuántica de campos y conexiones con principios holográficos.</p>
+                        <ul>
+                            <li>Correspondencia AdS/CFT</li>
+                            <li>Agujeros negros y scrambling</li>
+                            <li>Flecha del tiempo</li>
+                        </ul>
+                    </div>
+
+                    <div class="app-card">
+                        <div class="app-icon">🔬</div>
+                        <h3>Física Experimental</h3>
+                        <p>Nuevos paradigmas para interpretar fenómenos cuánticos observados en laboratorio.</p>
+                        <ul>
+                            <li>Decoherencia cuántica</li>
+                            <li>Darwinismo cuántico</li>
+                            <li>Transiciones de fase</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="future-work">
+                    <h3>Trabajo Futuro</h3>
+                    <div class="future-grid">
+                        <div class="future-item">
+                            <h4>1. Pruebas Rigurosas</h4>
+                            <p>Demostraciones formales de las relaciones conjeturadas</p>
+                        </div>
+                        <div class="future-item">
+                            <h4>2. Validación Experimental</h4>
+                            <p>Implementación de los 8 experimentos propuestos</p>
+                        </div>
+                        <div class="future-item">
+                            <h4>3. Extensiones Teóricas</h4>
+                            <p>Aplicación a teoría cuántica de campos y gravedad</p>
+                        </div>
+                        <div class="future-item">
+                            <h4>4. Conexiones Holográficas</h4>
+                            <p>Vínculos con principios holográficos y AdS/CFT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Referencias -->
+        <section id="referencias" class="section">
+            <div class="container">
+                <h2 class="section-title">Referencias Bibliográficas</h2>
+
+                <div class="references-grid">
+                    <div class="ref-category">
+                        <h3>Trabajos Fundacionales</h3>
+                        <ul class="ref-list">
+                            <li>Holevo, A.S. (1973). "Bounds for the quantity of information transmitted by a quantum communication channel". <em>Problems of Information Transmission</em> 9, 177-183</li>
+                            <li>Schumacher, B. & Westmoreland, M.D. (1997). "Sending classical information via noisy quantum channels". <em>PRA</em> 56, 131</li>
+                        </ul>
+                    </div>
+
+                    <div class="ref-category">
+                        <h3>Clonación y Broadcasting</h3>
+                        <ul class="ref-list">
+                            <li>Gisin, N. & Massar, S. (1997). "Optimal quantum cloning machines". <em>PRL</em> 79, 2153</li>
+                            <li>Bruß, D., Ekert, A. & Macchiavello, C. (1998). "Optimal universal quantum cloning and state estimation". <em>PRL</em> 81, 2598</li>
+                            <li>Barnum, H. et al. (1996). "Noncommuting mixed states cannot be broadcast". <em>PRL</em> 76, 2818</li>
+                        </ul>
+                    </div>
+
+                    <div class="ref-category">
+                        <h3>Relaciones de Incertidumbre</h3>
+                        <ul class="ref-list">
+                            <li>Berta, M. et al. (2010). "The uncertainty principle in the presence of quantum memory". <em>Nature Physics</em> 6, 659</li>
+                            <li>Maassen, H. & Uffink, J.B.M. (1988). "Generalized entropic uncertainty relations". <em>PRL</em> 60, 1103</li>
+                        </ul>
+                    </div>
+
+                    <div class="ref-category">
+                        <h3>Teoría de Categorías</h3>
+                        <ul class="ref-list">
+                            <li>Abramsky, S. & Coecke, B. (2004). "A categorical semantics of quantum protocols". <em>Proc. LICS, IEEE</em></li>
+                            <li>Selinger, P. (2007). "Dagger compact closed categories and completely positive maps". <em>ENTCS</em> 170, 139</li>
+                            <li>Döring, A. & Isham, C. (2008). "A topos foundation for theories of physics". arXiv:0803.0417</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="download-section">
+                    <h3>Documentos</h3>
+                    <div class="download-buttons">
+                        <a href="fundamental_concealment_paper_corrected.pdf" class="btn btn-download" target="_blank">
+                            📄 Descargar Paper Completo (PDF)
+                        </a>
+                        <a href="fundamental_concealment_paper_corrected.md" class="btn btn-download" target="_blank">
+                            📝 Ver Markdown
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Principio de Ocultación Fundamental</h4>
+                    <p>Una nueva perspectiva unificadora sobre los límites fundamentales de la información cuántica.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto Académico</h4>
+                    <p>Para discusiones académicas y colaboraciones de investigación.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#teoria">Marco Teórico</a></li>
+                        <li><a href="#experimentos">Experimentos</a></li>
+                        <li><a href="#referencias">Referencias</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fundamental Concealment Principle Theory. Contenido académico para investigación.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
